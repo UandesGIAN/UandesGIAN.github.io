@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="página" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <title> Página personal </title>
+    </head>
+
+    <body>
+        <h1 id="title">Gianfranco Bobadilla</h1>
+        <h3 id="name">Computer engeneer 4th year</h3>
+        
+        <a href="https://github.com/UandesGIAN">Link to my Github account</a>
+        
+        <p id="desc">I'm 21 years old and live in Santiago, Chile, I like videogames and computer technologies.
+            I also like programming and this career.
+        </p>
+
+        <table>
+            <tr id="table-header">
+                <td>Skill</td>
+                <td>Level</td>
+            </tr>
+            <tr>
+                <td class="bold-text">Python</td>
+                <td>Expert</td>
+            </tr>
+            <tr>
+                <td class="bold-text">Javascript</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td class="bold-text">HTML/CSS</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td class="bold-text">Git</td>
+                <td>Medium</td>
+            </tr>
+            <tr>
+                <td class="bold-text">C/C++</td>
+                <td>Advance</td>
+            </tr>
+            <tr>
+                <td class="bold-text">SQL</td>
+                <td>Advance</td>
+            </tr>
+            <tr>
+                <td class="bold-text">Ruby</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td class="bold-text">English</td>
+                <td>Advance</td>
+            </tr>
+            <tr>
+                <td class="bold-text">Spanish</td>
+                <td>Native</td>
+            </tr>
+        </table>
+        
+        <p id ="replace-text">sample text</p>
+        <button onclick="ReplaceText()" id="MyButton"><p id="button">MAGIC TRICK!</p></button>
+        <input id="input-text" type="text">
+
+        <script>
+            function ReplaceText() {
+                new_text = document.getElementById("input-text").value
+                document.getElementById("replace-text").innerText = new_text;
+            }
+        </script>
+    </body> 
+</html>
