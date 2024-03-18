@@ -4,71 +4,109 @@
         <meta charset="UTF-8"/>
         <meta name="página" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <title> Página personal </title>
+        <style> body {
+            background-image: url(https://w0.peakpx.com/wallpaper/340/399/HD-wallpaper-zelda-minimal-link-the-legend-of-zelda-breath-of-the-wild-hq-blue-fiction.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;}
+        </style>
     </head>
 
     <body>
-        <h1 id="title">Gianfranco Bobadilla</h1>
-        <h3 id="name">Computer engineer 4th year</h3>
-        
-        <a href="https://github.com/UandesGIAN">Link to my Github account</a>
-        
-        <p id="desc">I'm 21 years old and live in Santiago, Chile, I like videogames and computer technologies.
-            I also like programming and this career.
-        </p>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <div class="container justify-content-center align-items-center text-center p-3 mb-2 bg-white text-black bg-opacity-88">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h1 id="title">Gianfranco Bobadilla</h1>
+                </div>
+                <div class="col-4">
+                    <h3 id="name">Computer engineer 4th year</h3>
+                    <a class="btn btn-primary" href="https://github.com/UandesGIAN" role="button">Link to my Github account</a>
+                </div>
+                <div class="col-4">
+                    <p id="desc">I'm 21 years old and live in Santiago, Chile, I like videogames and computer technologies.<br>I also like programming and this career.</p>
+                </div>
+                <div class="col-12"><h1><h1></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Skill Levels
+                            </button>
+                            </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <table class="table table-info">
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">Skill</th>
+                                        <th><b>Python</b></th>
+                                        <th><b>Javascript</b></th>
+                                        <th><b>HTML/CSS</b></th>
+                                        <th><b>Git</b></th>
+                                        <th><b>C/C++</b></th>
+                                        <th><b>SQL</b></th>
+                                        <th><b>Ruby</b></th>
+                                        <th><b>English</b></th>
+                                        <th><b>Spanish</b></th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Level</th>
+                                        <th>Expert <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 90%"></div></th>
+                                        <th>Basic <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10">
+                                            <div class="progress-bar" style="width: 30%"></div></th>
+                                        <th>Basic <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10">
+                                            <div class="progress-bar" style="width: 30%"></div></th>
+                                        <th>Medium <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10">
+                                            <div class="progress-bar" style="width: 50%"></div></th>
+                                        <th>Advanced <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10">
+                                            <div class="progress-bar" style="width: 80%"></div></th>
+                                        <th>Advanced <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10">
+                                            <div class="progress-bar" style="width: 80%"></div></th>
+                                        <th>None <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10">
+                                            <div class="progress-bar" style="width: 0%"></div></th>
+                                        <th>Advanced <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10">
+                                            <div class="progress-bar" style="width: 80%"></div></th>
+                                        <th>Native <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10">
+                                            <div class="progress-bar" style="width: 100%"></div></th>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-start">
+                <div class="col-5">
+                    <p id ="replace-text">sample text</p>
+                </div>
+                <div class="col-6 align-items-center">
+                        <button type="button" onclick="ReplaceText()" class="btn btn-danger"><p id="button">MAGIC TRICK!</p></button>
+                        <input id="input-text" type="text">
+                        <button type="button" onclick="Goback()" class="btn-close" aria-label="Close"></button>
+                        <div class="spinner-border text-dark justify-content-center" role="status" id="spinner" style="display:none"></div>
 
-        <table>
-            <tr id="table-header">
-                <td>Skill</td>
-                <td>Level</td>
-            </tr>
-            <tr>
-                <td class="bold-text">Python</td>
-                <td>Expert</td>
-            </tr>
-            <tr>
-                <td class="bold-text">Javascript</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td class="bold-text">HTML/CSS</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td class="bold-text">Git</td>
-                <td>Medium</td>
-            </tr>
-            <tr>
-                <td class="bold-text">C/C++</td>
-                <td>Advance</td>
-            </tr>
-            <tr>
-                <td class="bold-text">SQL</td>
-                <td>Advance</td>
-            </tr>
-            <tr>
-                <td class="bold-text">Ruby</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td class="bold-text">English</td>
-                <td>Advance</td>
-            </tr>
-            <tr>
-                <td class="bold-text">Spanish</td>
-                <td>Native</td>
-            </tr>
-        </table>
-        
-        <p id ="replace-text">sample text</p>
-        <button onclick="ReplaceText()" id="MyButton"><p id="button">MAGIC TRICK!</p></button>
-        <input id="input-text" type="text">
+                    <script>function ReplaceText() {
+                        new_text = document.getElementById("input-text").value
+                        document.getElementById("spinner").style.display = 'block';
+                        setTimeout(() => {
+                            document.getElementById("replace-text").innerText = new_text;
+                            document.getElementById("spinner").style.display = 'none';
+                        }, 500);
+                    }</script>
+                    <script>function Goback() {
+                        document.getElementById("input-text").value = "";
+                    }</script>
 
-        <script>
-            function ReplaceText() {
-                new_text = document.getElementById("input-text").value
-                document.getElementById("replace-text").innerText = new_text;
-            }
-        </script>
+                </div>
+            </div>
+        </div>
     </body> 
 </html>
